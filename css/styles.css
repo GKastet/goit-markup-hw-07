@@ -492,13 +492,12 @@ img {
 
 /* Section*/
 
-.advantages,
 .examples {
   padding-bottom: 120px;
 }
-.section.advantages,
-.section.our-team,
-.section.customers {
+.advantages,
+.our-team,
+.customers {
   padding: 120px 0px;
 }
 .section-title {
