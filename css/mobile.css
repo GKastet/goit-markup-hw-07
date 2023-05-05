@@ -53,11 +53,19 @@
     display: none;
 }
 
+/* Burger */
+
 .btn-burger-menu {
     stroke: var(--navy-blue);
     background-color: var(--white);
     border: transparent;
 
+}
+
+.burger-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .burger-menu {
@@ -68,9 +76,6 @@
     height: 100%;
     padding: 80px 35px 40px 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
     
     background-color: var(--white);
       
@@ -85,7 +90,7 @@
 }
 
 .burger-menu.is-open {
-    transform: translateX(0%);
+    transform: translateX(0%);    
     pointer-events: initial;
     visibility: visible;
     opacity: 1;
@@ -181,6 +186,90 @@ letter-spacing: 0.02em;
 
 
 /* Buttons */
+
+.button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.button.btn-primary {
+  display: block;
+  padding: 16px 32px;
+  height: 56px;
+  min-width: 169px;
+  border: none;
+  margin: auto;
+
+  color: var(--white);
+  background-color: var(--iris);
+  transition: background-color var(--animation-time) var(--animation-cubic),
+    box-shadow var(--animation-time) var(--animation-cubic);
+}
+.button.btn-secondary {
+  padding: 12px 24px;
+  height: 48px;
+  min-width: 69px;
+
+  color: var(--iris);
+  background-color: var(--cloud);
+  border-color: #e7e9fc;
+
+  transition: color var(--animation-time) var(--animation-cubic),
+    background-color var(--animation-time) var(--animation-cubic),
+    border var(--animation-time) var(--animation-cubic) box-shadow
+      var(--animation-time) var(--animation-cubic);
+}
+
+.button.btn-primary:hover,
+.button.btn-primary:focus {
+  background-color: var(--ocean);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-close {
+  position: absolute;
+  top: 24px;
+  left: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
+
+  fill: var(--navy-blue);
+  background-color: var(--cornflower);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: fill var(--animation-time) var(--animation-cubic),
+    background-color var(--animation-time) var(--animation-cubic);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--white);
+  background-color: var(--ocean);
+}
 
 .btn-close {
   position: absolute;
@@ -712,6 +801,12 @@ letter-spacing: 0.02em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color var(--animation-time) var(--animation-cubic);
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--ocean);
+  
 }
 
 
