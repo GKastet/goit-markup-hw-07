@@ -1,3 +1,110 @@
-@media screen and (min-width:1158px){
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
 
+  /* Header */
+
+  .header-nav-page {
+    width: 452px;
+    
+  }
+
+  .logo {
+    margin-right: 76px; 
+}
+
+.address-ul {
+  display: flex;
+  gap: 40px;
+}
+
+  /* Section Advantages */
+
+  .advantages,
+  .our-team,
+  .customers {
+    padding: 120px 0px;
+  }
+
+  .advantages-list .title,
+  .team-list .title,
+  .filter-list .title {
+    margin-bottom: 8px;
+
+    color: var(--navy-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .advantages-item {
+    margin-bottom: 0;
+    flex-basis: calc((100% - 72px) / 4);
+  }  
+
+  .advantages-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 264px;
+    margin-bottom: 8px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+  }
+
+  /* Section Examples */
+
+  .section.examples {
+    display: flex;
+  }
+
+  .examples {
+    padding-bottom: 120px;
+  }
+
+  .example-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Section Our Team */
+
+.team-foto {
+    margin-bottom: 0;
+        
+  }
+
+/* Customers Section 5 */
+
+  .customers-logo-box {
+    width: calc((100% - (24px*5)) / 6);
+}
+
+/* Portfolio  Filter*/
+
+/* Portfolio Filter */
+
+/* FOOTER */
+
+.footer {
+    padding: 100px 0;
+    }
+
+.footer-container {
+    width: 1158px;
+    align-items: center;
+    column-gap: normal;
+    row-gap: normal;
+    /* outline: 1px solid red; */
+}
+
+.footer-chapter:nth-child(1) {
+    margin-right: 120px;
+  }
+  .footer-chapter:nth-child(2) {
+    margin-right: 80px;
+  }
 }
