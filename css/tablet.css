@@ -90,6 +90,17 @@
   transition: color var(--animation-time) var(--animation-cubic);
 }
 
+  /* Hero */
+
+ 
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    
+  }
+
   /* Section Advantages */
 
   .advantages-list,
@@ -175,7 +186,28 @@
   width: 264px;
 }
 
+/* Modal */
+
+.modal {
+  width: 408px;
+  height: 586px;
+   padding: 72px 24px 24px 24px;
+}
+
+.modal-label-comment {
+  margin-bottom: 16px;
+}
 
 
+}
+
+@media screen and (min-width: 769px) {
+ 
+  .hero {
+   background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/img-17.jpg);   
+  }
 
 }

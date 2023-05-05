@@ -19,6 +19,19 @@
   gap: 40px;
 }
 
+  /* Hero */
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;  
+  }
+
+  .hero-title {    
+    margin-bottom: 48px;
+    
+  }
+
+
   /* Section Advantages */
 
   .advantages,
@@ -107,4 +120,20 @@
   .footer-chapter:nth-child(2) {
     margin-right: 80px;
   }
+
+  /* Modal */
+
+  .modal {
+    width: 408px;
+    height: 584px;
+  }
+
+  .modal-input {
+    padding-left: 38px;
+  }
+
+  .modal-label-comment {
+  margin-bottom: 16px;
+}
+
 }
