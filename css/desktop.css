@@ -34,6 +34,19 @@
 
   /* Section Advantages */
 
+  .advantages-list .title {
+margin-bottom: 8px;
+
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  /* font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1; */
+  letter-spacing: 0.02em;
+}
+
   .advantages,
   .our-team,
   .customers {
@@ -92,8 +105,20 @@
 
 /* Customers Section 5 */
 
+.customers-overlay {
+  display: flex;
+  align-items:normal;
+}
+
+.customers-list {
+  max-width: 100%;
+}
+
   .customers-logo-box {
     width: calc((100% - (24px*5)) / 6);
+    .customers-list {
+     max-width: 100%;
+    }
 }
 
 /* Portfolio  Filter*/

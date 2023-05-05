@@ -3,6 +3,8 @@
     width: 768px;
   }
 
+  
+
   /* Header */
 
   .burger-menu {
@@ -113,6 +115,11 @@
     gap: 24px;
   }
 
+  .advantages-list .title {
+    text-align: initial;
+    
+  }
+
   .advantages-item {
     flex-basis: calc((100% - 24px) / 2);
     /* outline: 1px solid blue; */
@@ -127,13 +134,14 @@
   }
 
   .team-foto {
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 
   /* Customers Section 5 */
 
   .customers-list {
     gap: 24px;
+    max-width: 552px;
   }
 
   .customers-logo-box {
@@ -144,13 +152,27 @@
 
 /* Portfolio Filter */
 
+/* Customers */
+
+.customers-link {
+  /* max-width: 168px;
+  height: 88px; */
+  /* width: 100%;
+  height: 100%; */
+}
+
+.customers-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* FOOTER */
 
 
 .footer-container {
-    width: 768px;
+    width: 552px;
     align-items: flex-start;
-    justify-content: center;
 
     flex-direction: row;
     flex-wrap: wrap;
