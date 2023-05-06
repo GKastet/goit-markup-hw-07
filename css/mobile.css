@@ -149,7 +149,7 @@
 .btn-close {
   position: absolute;
   top: 24px;
-  left: 360px;
+  left: calc(100vw - 70px);
 
   display: flex;
   justify-content: center;
@@ -174,29 +174,7 @@
   background-color: var(--ocean);
 }
 
-.btn-close {
-  position: absolute;
-  top: 24px;
-  left: 360px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  border-radius: 50%;
-
-  fill: var(--navy-blue);
-  background-color: var(--cornflower);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-
-  transition: fill var(--animation-time) var(--animation-cubic),
-    background-color var(--animation-time) var(--animation-cubic);
-}
-
-.burger-closebtn {
+.btn-close.burger-closebtn {
 
   top: -32px;
   left: calc(100vw - 120px);  
@@ -853,10 +831,14 @@ gap: 40px; */
     url(../images/hero-bg-tablet.jpg);   
   }
 
-  .modal {
+    .modal {
     width: 392px;
   height: 586px;
         
+  }
+
+  .btn-close {
+   left: 360px;
   }
 
   .burger-tel {
@@ -870,5 +852,7 @@ gap: 40px; */
     justify-content: center;
     gap: 40px;
   }
+
+
 
 }
