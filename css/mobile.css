@@ -53,108 +53,7 @@
     display: none;
 }
 
-/* Burger */
 
-.btn-burger-menu {
-    stroke: var(--navy-blue);
-    background-color: var(--white);
-    border: transparent;
-
-}
-
-.burger-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.burger-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 80px 35px 40px 40px;
-    display: flex;
-    
-    background-color: var(--white);
-      
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-    
-    transform: translateX(100%);
-    transition: transform var(--animation-time) var(--animation-cubic);
-
-    outline: 1px solid red;
-}
-
-.burger-menu.is-open {
-    transform: translateX(0%);    
-    pointer-events: initial;
-    visibility: visible;
-    opacity: 1;
-    
-}
-
-.burger-links {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
-  font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-
-letter-spacing: 0.02em;
-text-transform: capitalize;
-}
-
-.burger-link-item {
-  color: var(--navy-blue);
-}
-
-.burger-active {
-  color: var(--ocean);
-}
-
-.burger-bottom {
-  display: flex;
-  flex-direction: column;
-  
-  gap: 48px;
-  /* outline: 1px solid red; */
-}
-
-.burger-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  
-}
-.burger-tel {
-  color: var(--iris);
-  font-weight: 700;
-font-size: 36px;
-line-height: 1.11;
-
-letter-spacing: 0.02em;
-text-transform: capitalize;
-}
-
-.burger-email {
-  color: var(--slate);
-  font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-}
-
-.burger-social-list {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
 
 /* Hero */
 
@@ -298,7 +197,9 @@ letter-spacing: 0.02em;
 }
 
 .burger-closebtn {
-  
+
+  top: -32px;
+  left: calc(100vw - 120px);  
   
 }
 
@@ -395,7 +296,7 @@ margin-bottom: 8px;
   /* outline: 1px solid blue; */
 }
 
-.team-foto {
+.team-foto:not(:last-child) {
     width: 264px;
   margin-bottom: 72px;
 
@@ -660,7 +561,7 @@ margin-bottom: 8px;
   pointer-events: none;
 }
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -756,6 +657,7 @@ margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap:wrap;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;  
@@ -828,6 +730,113 @@ margin-bottom: 8px;
   
 }
 
+/* Burger */
+
+.btn-burger-menu {
+  stroke: var(--navy-blue);
+  background-color: var(--white);
+  border: transparent;
+
+}
+
+.burger-overlay {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+position: relative;
+/* outline: 1px solid red; */
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 80px 35px 40px 40px;
+  display: flex;
+  
+  background-color: var(--white);
+    
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  
+  transform: translateX(100%);
+  transition: transform var(--animation-time) var(--animation-cubic);
+
+  outline: 1px solid red;
+}
+
+.burger-menu.is-open {
+  transform: translateX(0%);    
+  pointer-events: initial;
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+.burger-links {
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+.burger-link-item {
+color: var(--navy-blue);
+}
+
+.burger-active {
+color: var(--ocean);
+}
+
+.burger-bottom {
+display: flex;
+flex-direction: column;
+
+gap: 48px;
+/* outline: 1px solid red; */
+}
+
+.burger-contacts {
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+}
+.burger-tel {
+color: var(--iris);
+font-weight: 700;
+font-size: calc((100vw - 320px) / (430 - 320) * (36 - 20) + 20px);
+line-height: 1.11;
+
+letter-spacing: 0.02em;
+text-transform: capitalize;
+}
+
+.burger-email {
+color: var(--slate);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
+
+.burger-social-list {
+display: flex;
+justify-content: space-evenly;
+
+/* justify-content: center;
+gap: 40px; */
+}
+
 
 
 
@@ -848,6 +857,18 @@ margin-bottom: 8px;
     width: 392px;
   height: 586px;
         
+  }
+
+  .burger-tel {
+    
+  font-size: 36px;
+  }
+  
+
+  .burger-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
 
 }
