@@ -414,7 +414,7 @@ margin-bottom: 8px;
   max-width: 396px;
   border-bottom: 1px solid var(--cornflower);
   transition: transform var(--animation-time) var(--animation-cubic);
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .filter-item:hover .filter-item-overlay {
@@ -842,7 +842,7 @@ margin-bottom: 8px;
   transform: translateX(100%);
   transition: transform var(--animation-time) var(--animation-cubic);
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .burger-overlay {
