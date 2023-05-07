@@ -157,6 +157,38 @@
 
 /* Portfolio  Filter*/
 
+.filter {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.button-filter {
+  margin-bottom: 64px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.filter-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 24px;
+}
+
+.filter-item {
+  /* max-width: 356px; */
+  max-width: calc((100% - 24px) / 2);
+  
+  
+}
+
+.portf-img {
+  width: 356px;
+  height:300px;
+}
+
+
 /* Portfolio Filter */
 
 /* Customers */
