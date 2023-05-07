@@ -176,8 +176,9 @@
 
 .btn-close.burger-closebtn {
 
-  top: -32px;
-  left: calc(100vw - 120px);  
+  top: 24px;
+  left: calc(100vw - 48px);  
+  /* rigth: calc(100vw-24px); */
   
 }
 
@@ -274,15 +275,20 @@ margin-bottom: 8px;
   /* outline: 1px solid blue; */
 }
 
-.team-foto:not(:last-child) {
+.team-foto {
     width: 264px;
-  margin-bottom: 72px;
+  /* margin-bottom: 72px; */
 
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+
+.team-foto:not(:last-child) {
+    margin-bottom: 72px;
+  }
+    
 .pos-title {
   padding: 32px 0;
 }
@@ -717,13 +723,7 @@ margin-bottom: 8px;
 
 }
 
-.burger-overlay {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-position: relative;
-/* outline: 1px solid red; */
-}
+
 
 .burger-menu {
   position: fixed;
@@ -744,6 +744,14 @@ position: relative;
   transition: transform var(--animation-time) var(--animation-cubic);
 
   outline: 1px solid red;
+}
+
+.burger-overlay {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* position: relative; */
+/* outline: 1px solid red; */
 }
 
 .burger-menu.is-open {

@@ -112,7 +112,8 @@
   }
 
   .advantages-list {
-    gap: 24px;
+    column-gap: 24px;
+
   }
 
   .advantages-list .title {
@@ -130,17 +131,23 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap:64px;
   }
 
   .team-foto {
     margin-bottom: 0;
   }
+  .team-foto:not(:last-child) {
+    margin-bottom: 0;}
+
 
   /* Customers Section 5 */
 
   .customers-list {
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
+
     max-width: 552px;
   }
 
